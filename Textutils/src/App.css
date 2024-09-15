@@ -1,0 +1,172 @@
+#email{
+    display: none;
+    
+}
+#bullets{
+    display: none;
+}
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Textarea styles */
+  .subcontainer {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea {
+    width: calc(100% - 20px);
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+  
+  /* Word count styles */
+  .subcontainer p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7f8c8d;
+  }
+  
+  /* Button styles */
+  .btn {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button:hover {
+    background-color: #333333;
+  }
+  
+  button i {
+    margin-right: 5px;
+  }
+  
+  /* Results section styles */
+  #email, #bullets {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Alert styles */
+  .alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #241486;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .alert.show {
+    opacity: 1.5;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  #email, #bullets {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  /* Accessibility */
+  button:focus, textarea:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+  }
+  
+  /* Custom scrollbar */
+  textarea::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+ 
+
+
+
+
+
+
+
+
