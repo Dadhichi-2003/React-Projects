@@ -1,0 +1,152 @@
+/* Footer Styles */
+.footer {
+  background-color: #2a363b;
+  color: #ffffff;
+  padding: 20px 10%;
+  font-family: "Trebuchet MS", sans-serif;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  color: #cf4647;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 20px;
+  transition: color 0.3s;
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  color: #cf4647;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #cf4647;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #c12f2f;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 720px) {
+  .footer {
+    padding: 20px 5%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+  }
+  .footer-section ul {
+    margin-top: 10px;
+    align-items: start;
+  }
+  .footer-section ul li {
+    margin: 0;
+    gap: 0;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+    text-align: start;
+  }
+  .social-media {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  .newsletter-form input {
+    font-size: 14px;
+  }
+
+  .newsletter-form button {
+    font-size: 14px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}

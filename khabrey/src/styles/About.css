@@ -1,0 +1,53 @@
+/* Container for the entire about section */
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0px 10px #00000076;
+  margin-top: 20px;
+}
+
+/* Header section */
+.about-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Content section */
+.about-content {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    font-size: 0.9rem;
+  }
+}

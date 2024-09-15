@@ -1,0 +1,31 @@
+.scrolling-container {
+  width: 100%; /* Full width of the parent container */
+  overflow-x: hidden; /* Hide the scrollbar */
+}
+
+.scrolling-content {
+  display: flex;
+  white-space: nowrap; /* Prevent wrapping to the next line */
+  animation: scroll 20s linear infinite; /* Animate the scroll */
+}
+
+.headline-item {
+  display: inline-block;
+  padding: 0 40px; /* Space between items */
+  font-size: 24px;
+  padding: 10px;
+  color: black;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* Start from the right */
+  }
+  to {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+.load1 {
+  font-size: 24px;
+}

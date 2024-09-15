@@ -1,0 +1,89 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+  margin: 0px 40px 40px 40px;
+}
+
+.Sport-Image {
+  height: auto;
+  width: 300px;
+  cursor: pointer;
+}
+
+.Inside-container {
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid black;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  transition: transform 0.4s ease;
+}
+
+.Inside-container:hover {
+  transform: scale(0.95);
+  z-index: 1;
+}
+
+.Description {
+  justify-content: center;
+
+  font-size: medium;
+  padding: 20px;
+}
+
+.HEADING {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
+  background-color: #ff3d00;
+  width: 100%;
+}
+
+.parent-container {
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 30px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  height: auto;
+  width: 130px;
+}
+
+@media only screen and (max-width: 721px) {
+  .Sport-Image {
+    height: 200px;
+    overflow: hidden;
+  }
+}

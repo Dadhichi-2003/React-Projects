@@ -1,0 +1,60 @@
+.Navbar {
+  width: 100%;
+  background-color: #2a363b;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: start; /* Ensures space between child elements */
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  /* Simplified padding */
+}
+
+.Head {
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #cf4647;
+  font-family: "Trebuchet MS";
+  padding: 10px; /* Pushes the rest of the content to the right */
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+  width: 100%;
+  list-style: none;
+  column-gap: 20px;
+  font-size: 22px;
+  font-family: "Trebuchet MS";
+  color: aliceblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.link {
+  text-decoration: none; /* Removes the underline */
+  color: inherit;        /* Optional: Keeps the color consistent with surrounding text */
+}
+
+li:hover {
+  color: #cf4647;
+}
+
+@media only screen and (max-width: 900px) {
+  .Navbar {
+    display: block;
+    gap: 20px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-items: start;
+  }
+  .Head {
+    text-align: center;
+    margin-right: 10px;
+  }
+}
